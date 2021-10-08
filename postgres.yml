@@ -18,6 +18,5 @@ services:
     volumes:
       - /home/mustafa/data/pgadmin:/var/lib/pgadmin
 
-#sudo chown -R 5050:5050 ./pgadmin/
 
 

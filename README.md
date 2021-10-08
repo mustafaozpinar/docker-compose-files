@@ -7,6 +7,8 @@ You need to add "127.0.0.1 kafka" (or whatever you give in kafka.yml) to /etc/ho
 #### kafka.yml
 KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
 
+You can use Kafka [Offset Explorer](https://www.kafkatool.com/) to play with Kafka.
+
 ### Troubleshoot
 If containers give "permission denied" errors when creating folders, try this in data folder:
 
@@ -14,4 +16,3 @@ If containers give "permission denied" errors when creating folders, try this in
 
 > sudo chmod 777 zookeper/ kafka /
 
-You can use Kafka [Offset Explorer](https://www.kafkatool.com/) to play with Kafka.
