@@ -1,0 +1,23 @@
+version: "3.3"
+services:
+  postgres:
+    image: "postgres:latest"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - /home/mustafa/data/postgres:/var/lib/postgresql/data
+  pgadmin:
+    image: "dpage/pgadmin4:latest"
+    ports:
+      - "8082:80"
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=mustafa.ozpinar@toptal.com
+      - PGADMIN_DEFAULT_PASSWORD=123
+    volumes:
+      - /home/mustafa/data/pgadmin:/var/lib/pgadmin
+
+#sudo chown -R 5050:5050 ./pgadmin/
+
+
